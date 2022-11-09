@@ -15,8 +15,6 @@ request(url, (error, response, body) => {
 });
 };
 
-const printBreed = function(error, data) {
-  console.log(data);
-}
 
-fetchBreedDescription("Chartreux", printBreed)
+
+module.exports = { fetchBreedDescription };
